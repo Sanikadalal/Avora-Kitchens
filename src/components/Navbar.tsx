@@ -27,17 +27,15 @@ export default function Navbar() {
     <motion.header
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] as any }}
       className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-        isScrolled ? 'bg-[#F7F5F0]/90 backdrop-blur-md shadow-sm' : 'bg-transparent'
-      }`}
+        isScrolled ? 'bg-[#FAFAF7] shadow-sm' : 'bg-[#FAFAF7]'
+      } border-b border-gray-200/50`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className={`flex items-center justify-between transition-all duration-300 ${
-          isScrolled ? 'py-4' : 'py-6'
-        }`}>
+        <div className={`flex items-center justify-between transition-all duration-300 py-4`}>
           {/* Logo */}
-          <Link href="/" className="flex items-center z-50 group">
+          <Link href="/" className="flex items-center z-50 group mix-blend-darken">
             <Image src="/logo.png" alt="Avora Kitchens Logo" width={140} height={40} className="object-contain group-hover:opacity-80 transition-opacity h-auto max-h-12 w-auto" />
           </Link>
 
@@ -47,14 +45,14 @@ export default function Navbar() {
               <Link 
                 key={link.name} 
                 href={link.href}
-                className="text-sm font-sans font-medium text-secondary hover:text-primary transition-colors"
+                className="text-sm font-sans font-medium text-gray-700 hover:text-black transition-colors tracking-wide"
               >
                 {link.name}
               </Link>
             ))}
             <Link 
               href="#contact"
-              className="bg-[#8A765F] hover:bg-[#726250] text-white px-6 py-2.5 rounded text-sm font-medium transition-colors"
+              className="bg-[#171717] hover:bg-black text-white px-6 py-2.5 rounded-none text-sm font-medium transition-colors tracking-wide"
             >
               Get a Quote
             </Link>

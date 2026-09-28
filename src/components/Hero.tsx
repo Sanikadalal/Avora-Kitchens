@@ -31,11 +31,12 @@ export default function Hero() {
           priority
           className="object-cover"
         />
-        {/* Dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-black/10" />
+        {/* Dramatic cinematic overlay for high contrast */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
       </div>
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-24 pb-32">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 md:px-12 lg:px-24 pb-32 pt-40">
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -44,21 +45,21 @@ export default function Hero() {
         >
           <motion.p
             variants={itemVariants}
-            className="text-xs uppercase tracking-[0.2em] text-[#F7F5F0]/90 mb-6 font-sans font-semibold"
+            className="text-xs uppercase tracking-[0.2em] text-white/90 mb-6 font-sans font-semibold"
           >
             MODULAR KITCHENS · BENGALURU
           </motion.p>
           
           <motion.h1
             variants={itemVariants}
-            className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[1.1] mb-8 whitespace-pre-line"
+            className="font-serif text-5xl md:text-7xl lg:text-8xl text-white leading-[1.1] mb-8 whitespace-pre-line tracking-tight drop-shadow-md"
           >
             {'Designed around\nthe way you live.'}
           </motion.h1>
           
           <motion.p
             variants={itemVariants}
-            className="font-sans text-lg text-white/80 max-w-xl mb-12 leading-relaxed"
+            className="font-sans text-lg text-white/90 max-w-xl mb-12 leading-relaxed"
           >
             Thoughtfully designed modular kitchens crafted for modern Indian homes.
           </motion.p>
@@ -67,11 +68,11 @@ export default function Hero() {
             variants={itemVariants}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <button className="inline-flex items-center justify-center gap-2 bg-[#8A765F] hover:bg-[#72624E] text-white font-sans font-medium rounded-full px-8 py-4 transition-colors duration-300">
+            <button className="inline-flex items-center justify-center gap-3 bg-white hover:bg-gray-100 text-[#171717] font-sans font-semibold uppercase tracking-wider text-sm px-10 py-5 transition-colors duration-300">
               Get a Free Consultation
               <ArrowRight strokeWidth={1.5} className="w-5 h-5" />
             </button>
-            <button className="inline-flex items-center justify-center bg-transparent border border-white hover:bg-white/10 text-white font-sans font-medium rounded-full px-8 py-4 transition-colors duration-300">
+            <button className="inline-flex items-center justify-center bg-transparent border border-white hover:bg-white/10 text-white font-sans font-semibold uppercase tracking-wider text-sm px-10 py-5 transition-colors duration-300">
               Explore Kitchens
             </button>
           </motion.div>
