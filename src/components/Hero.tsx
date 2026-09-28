@@ -69,7 +69,7 @@ export default function Hero() {
           >
             <button className="inline-flex items-center justify-center gap-2 bg-[#8A765F] hover:bg-[#72624E] text-white font-sans font-medium rounded-full px-8 py-4 transition-colors duration-300">
               Get a Free Consultation
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight strokeWidth={1.5} className="w-5 h-5" />
             </button>
             <button className="inline-flex items-center justify-center bg-transparent border border-white hover:bg-white/10 text-white font-sans font-medium rounded-full px-8 py-4 transition-colors duration-300">
               Explore Kitchens
@@ -89,7 +89,7 @@ export default function Hero() {
           animate={{ y: [0, 8, 0] }}
           transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" as any }}
         >
-          <ChevronDown className="w-5 h-5" />
+          <ChevronDown strokeWidth={1.5} className="w-5 h-5" />
         </motion.div>
       </motion.div>
     </section>

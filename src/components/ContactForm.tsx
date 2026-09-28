@@ -44,15 +44,15 @@ export default function ContactForm() {
               <h3 className="text-xl font-semibold text-[#171717] mb-6">Contact Information</h3>
               <div className="space-y-6 text-[#5E5A54]">
                 <a href={`tel:${business.phone}`} className="flex items-center gap-4 hover:text-[#171717] transition-colors">
-                  <Phone className="w-5 h-5 text-[#8A765F]" />
+                  <Phone strokeWidth={1.5} className="w-5 h-5 text-[#8A765F]" />
                   <span>{business.phone}</span>
                 </a>
                 <a href={`mailto:${business.email}`} className="flex items-center gap-4 hover:text-[#171717] transition-colors">
-                  <Mail className="w-5 h-5 text-[#8A765F]" />
+                  <Mail strokeWidth={1.5} className="w-5 h-5 text-[#8A765F]" />
                   <span>{business.email}</span>
                 </a>
                 <div className="flex items-start gap-4">
-                  <MapPin className="w-5 h-5 text-[#8A765F] shrink-0 mt-1" />
+                  <MapPin strokeWidth={1.5} className="w-5 h-5 text-[#8A765F] shrink-0 mt-1" />
                   <span>{business.address}</span>
                 </div>
               </div>
@@ -65,7 +65,7 @@ export default function ContactForm() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 bg-[#25D366] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#1DA851] transition-colors"
               >
-                <MessageCircle className="w-5 h-5" />
+                <MessageCircle strokeWidth={1.5} className="w-5 h-5" />
                 Chat on WhatsApp
               </a>
             </div>

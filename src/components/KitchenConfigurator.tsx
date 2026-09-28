@@ -59,7 +59,7 @@ export default function KitchenConfigurator() {
       <div className="max-w-6xl mx-auto px-6 relative z-10">
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Calculator className="w-5 h-5 text-[#D8D0C4]" />
+            <Calculator strokeWidth={1.5} className="w-5 h-5 text-[#D8D0C4]" />
             <span className="label-sm text-[#D8D0C4]">BUDGET CALCULATOR</span>
           </div>
           <h2 className="font-serif text-4xl md:text-5xl mb-6">Design your kitchen. <br/>Know your budget.</h2>
@@ -101,7 +101,7 @@ export default function KitchenConfigurator() {
                         </div>
                         <div className="p-4 bg-white flex justify-between items-center">
                           <span className="font-semibold">{layout.name}</span>
-                          {selections.layout.id === layout.id && <Check className="w-5 h-5 text-[#8A765F]" />}
+                          {selections.layout.id === layout.id && <Check strokeWidth={1.5} className="w-5 h-5 text-[#8A765F]" />}
                         </div>
                       </button>
                     ))}
@@ -122,7 +122,7 @@ export default function KitchenConfigurator() {
                           <p className="text-sm text-gray-500 mt-1">{mat.desc}</p>
                         </div>
                         <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${selections.material.id === mat.id ? 'border-[#8A765F] bg-[#8A765F]' : 'border-gray-300'}`}>
-                          {selections.material.id === mat.id && <Check className="w-4 h-4 text-white" />}
+                          {selections.material.id === mat.id && <Check strokeWidth={1.5} className="w-4 h-4 text-white" />}
                         </div>
                       </button>
                     ))}
@@ -143,7 +143,7 @@ export default function KitchenConfigurator() {
                           <p className="text-sm text-gray-500 mt-1">{size.desc}</p>
                         </div>
                         <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${selections.size.id === size.id ? 'border-[#8A765F] bg-[#8A765F]' : 'border-gray-300'}`}>
-                          {selections.size.id === size.id && <Check className="w-4 h-4 text-white" />}
+                          {selections.size.id === size.id && <Check strokeWidth={1.5} className="w-4 h-4 text-white" />}
                         </div>
                       </button>
                     ))}
@@ -163,7 +163,7 @@ export default function KitchenConfigurator() {
                       <input type="text" placeholder="Your Name" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#8A765F] bg-white" required />
                       <input type="tel" placeholder="Phone Number" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-[#8A765F] bg-white" required />
                       <button className="w-full bg-[#171717] text-white py-4 rounded-lg font-semibold hover:bg-[#8A765F] transition-colors flex items-center justify-center gap-2">
-                        Get Detailed Quote <ArrowRight className="w-4 h-4" />
+                        Get Detailed Quote <ArrowRight strokeWidth={1.5} className="w-4 h-4" />
                       </button>
                     </form>
                   </motion.div>
@@ -181,7 +181,7 @@ export default function KitchenConfigurator() {
                  ) : <div></div>}
                  
                  <button onClick={() => setStep(step + 1)} className="flex items-center gap-2 bg-[#8A765F] text-white px-6 py-3 rounded-full font-medium hover:bg-[#705e4a] transition-colors">
-                   Continue <ChevronRight className="w-4 h-4" />
+                   Continue <ChevronRight strokeWidth={1.5} className="w-4 h-4" />
                  </button>
                </div>
             )}
@@ -215,11 +215,11 @@ export default function KitchenConfigurator() {
 
             <div className="mt-12 bg-white p-6 rounded-xl border border-gray-200 shadow-sm">
               <div className="flex items-center gap-3 mb-2">
-                <Check className="w-5 h-5 text-green-600" />
+                <Check strokeWidth={1.5} className="w-5 h-5 text-green-600" />
                 <span className="font-semibold">Professional Installation</span>
               </div>
               <div className="flex items-center gap-3">
-                <Check className="w-5 h-5 text-green-600" />
+                <Check strokeWidth={1.5} className="w-5 h-5 text-green-600" />
                 <span className="font-semibold">10-Year Warranty</span>
               </div>
             </div>

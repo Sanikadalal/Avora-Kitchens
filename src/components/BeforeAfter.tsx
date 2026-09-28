@@ -110,8 +110,8 @@ export default function BeforeAfter() {
             {/* Handle */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg pointer-events-none text-[#171717]">
               <div className="flex gap-0.5">
-                <MoveLeft size={16} />
-                <MoveRight size={16} />
+                <MoveLeft strokeWidth={1.5} size={16} />
+                <MoveRight strokeWidth={1.5} size={16} />
               </div>
             </div>
           </div>
