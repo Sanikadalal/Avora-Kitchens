@@ -26,7 +26,7 @@ export default function Hero() {
       <div className="absolute inset-0 z-0">
         <Image
           src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1920&q=80"
-          alt="Premium Forma Kitchen"
+          alt="Premium Avora Kitchen"
           fill
           priority
           className="object-cover"

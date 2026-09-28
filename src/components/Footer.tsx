@@ -37,7 +37,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-2">
             <Link href="/" className="inline-block mb-6">
-              <span className="font-serif text-4xl tracking-tight">FORMA</span>
+              <span className="font-serif text-4xl tracking-tight">AVORA</span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm mb-8">
               {business.description}
@@ -105,7 +105,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm">
-            © {currentYear} FORMA Kitchens. All rights reserved.
+            © {currentYear} Avora Kitchens. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm text-gray-500">
             <Link href="/privacy" className="hover:text-gray-300 transition-colors">Privacy Policy</Link>

@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'FORMA Kitchens — Premium Modular Kitchens in Bengaluru',
+  title: 'Avora Kitchens — Premium Modular Kitchens in Bengaluru',
   description: 'Thoughtfully designed modular kitchens crafted for modern Indian homes. Custom designs, premium materials, professional installation. Book a free consultation.',
   keywords: ['modular kitchen Bangalore', 'modular kitchen design Bangalore', 'custom modular kitchens Bangalore', 'luxury modular kitchens Bangalore'],
   openGraph: {
-    title: 'FORMA Kitchens — Premium Modular Kitchens in Bengaluru',
+    title: 'Avora Kitchens — Premium Modular Kitchens in Bengaluru',
     description: 'Thoughtfully designed modular kitchens crafted for modern Indian homes. Custom designs, premium materials, professional installation.',
-    url: 'https://formakitchens.in',
-    siteName: 'FORMA Kitchens',
+    url: 'https://avorakitchens.in',
+    siteName: 'Avora Kitchens',
     locale: 'en_IN',
     type: 'website',
   },

@@ -37,7 +37,7 @@ export default function Navbar() {
         }`}>
           {/* Logo */}
           <Link href="/" className="flex flex-col z-50 group">
-            <span className="font-serif text-3xl text-primary leading-none group-hover:opacity-80 transition-opacity">FORMA</span>
+            <span className="font-serif text-3xl text-primary leading-none group-hover:opacity-80 transition-opacity">AVORA</span>
             <span className="text-[0.65rem] font-sans font-semibold uppercase tracking-[0.35em] text-secondary mt-1">Kitchens</span>
           </Link>
 
