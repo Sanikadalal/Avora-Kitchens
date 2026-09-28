@@ -11,7 +11,7 @@ import ProcessTimeline from '@/components/ProcessTimeline'
 import WhyChooseUs from '@/components/WhyChooseUs'
 import TrustStats from '@/components/TrustStats'
 import Testimonials from '@/components/Testimonials'
-import BudgetEstimate from '@/components/BudgetEstimate'
+import KitchenConfigurator from '@/components/KitchenConfigurator'
 import ContactForm from '@/components/ContactForm'
 import FinalCTA from '@/components/FinalCTA'
 import Footer from '@/components/Footer'
@@ -34,7 +34,7 @@ export default function Home() {
         <WhyChooseUs />
         <TrustStats />
         <Testimonials />
-        <BudgetEstimate />
+        <KitchenConfigurator />
         <ContactForm />
         <FinalCTA />
       </main>
