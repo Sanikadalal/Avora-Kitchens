@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Phone, Mail, ArrowRight } from 'lucide-react';
 import { business } from '@/data/business';
 
@@ -36,8 +37,8 @@ export default function Footer() {
           
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-block mb-6">
-              <span className="font-serif text-4xl tracking-tight">AVORA</span>
+            <Link href="/" className="inline-block mb-6 relative">
+              <Image src="/logo.png" alt="Avora Kitchens Logo" width={140} height={40} className="object-contain h-auto max-h-12 w-auto brightness-0 invert" />
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm mb-8">
               {business.description}

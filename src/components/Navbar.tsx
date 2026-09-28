@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 const navLinks = [
   { name: 'Kitchens', href: '#kitchens' },
@@ -36,9 +37,8 @@ export default function Navbar() {
           isScrolled ? 'py-4' : 'py-6'
         }`}>
           {/* Logo */}
-          <Link href="/" className="flex flex-col z-50 group">
-            <span className="font-serif text-3xl text-primary leading-none group-hover:opacity-80 transition-opacity">AVORA</span>
-            <span className="text-[0.65rem] font-sans font-semibold uppercase tracking-[0.35em] text-secondary mt-1">Kitchens</span>
+          <Link href="/" className="flex items-center z-50 group">
+            <Image src="/logo.png" alt="Avora Kitchens Logo" width={140} height={40} className="object-contain group-hover:opacity-80 transition-opacity h-auto max-h-12 w-auto" />
           </Link>
 
           {/* Desktop Nav */}
