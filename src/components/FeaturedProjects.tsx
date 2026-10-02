@@ -41,7 +41,7 @@ export default function FeaturedProjects() {
                 <div className="w-full lg:w-3/5 group cursor-pointer relative">
                   <div className="relative aspect-[16/9] lg:aspect-[3/2] overflow-hidden rounded-lg">
                     <motion.div
-                      className="w-full h-full"
+                      className="relative w-full h-full"
                       whileHover={{ scale: 1.03 }}
                       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] as any }}
                     >

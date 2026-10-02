@@ -48,7 +48,7 @@ export default function KitchenTypes() {
             <motion.div key={kitchen.id} variants={itemVariants} className="group cursor-pointer">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-6">
                 <motion.div
-                  className="w-full h-full"
+                  className="relative w-full h-full"
                   whileHover={{ scale: 1.05 }}
                   transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] as any }}
                 >

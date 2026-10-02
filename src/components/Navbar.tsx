@@ -36,7 +36,7 @@ export default function Navbar() {
         <div className={`flex items-center justify-between transition-all duration-300 py-4`}>
           {/* Logo */}
           <Link href="/" className="flex items-center z-50 group mix-blend-darken">
-            <Image src="/logo.png" alt="Avora Kitchens Logo" width={140} height={40} className="object-contain group-hover:opacity-80 transition-opacity h-auto max-h-12 w-auto" />
+            <Image src="/logo.png" alt="Avora Kitchens Logo" width={140} height={40} className="object-contain group-hover:opacity-80 transition-opacity h-auto max-h-12 w-auto" priority />
           </Link>
 
           {/* Desktop Nav */}

@@ -47,7 +47,7 @@ export default function ProcessTimeline() {
           <div className="flex flex-col lg:flex-row justify-between gap-12 lg:gap-8">
             {processSteps.map((step: any, index: number) => (
               <motion.div 
-                key={step.id} 
+                key={step.number} 
                 variants={itemVariants}
                 className="relative flex flex-row lg:flex-col items-start lg:items-center text-left lg:text-center w-full lg:w-1/4"
               >
